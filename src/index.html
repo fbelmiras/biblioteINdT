@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+
+    <title>Biblioteca Indt</title>
+    <link href="css/stylesheet.css" rel="stylesheet">    
+    
+    
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
+    <script src="js/vendor/dirPagination.js"></script>
+    <script src="js/vendor/dirPagination.spec.js"></script>                 
+    
+    <script src="js/app/app.js"></script>    
+ 
+    
+    <script src="js/app/autor/AutorListarCtrl.js"></script>
+    
+    <script src="js/app/autor/AutorCriarCtrl.js"></script>
+    <script src="js/app/autor/AutorDetalheCtrl.js"></script>
+    <script src="js/app/autor/AutorEditarCtrl.js"></script>
+    <script src="js/app/autor/AutorRemoverCtrl.js"></script>
+
+
+    <script src="js/app/livro/LivroListarCtrl.js"></script>
+    <script src="js/app/livro/LivroCriarCtrl.js"></script>
+    <script src="js/app/livro/LivroDetalheCtrl.js"></script>
+    <script src="js/app/livro/LivroEditarCtrl.js"></script>
+    <script src="js/app/livro/LivroRemoverCtrl.js"></script>  
+
+  </head>
+  <body ng-app="autor"> 
+      <header>
+          <nav>
+              <ul>
+                  <li>
+                      <a href="/#/criar">Criar Autor</a>
+                  </li>
+              </ul>
+          </nav>
+          <h3><a href="/#/">Autores</a></h3>
+          <nav>
+                <ul>
+                    <li>
+                        <a href="/#/livro">Livros</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                    <ul>
+                        <li>
+                            <a href="/#/criarlivro">Criar Livro</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+        
+        
+        <article>
+            <div class="principal" ng-view></div>
+        </article> 
+    </body>
+</html>
